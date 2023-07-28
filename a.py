@@ -1,3 +1,11 @@
+import streamlit as st
+import requests
+import os
+import base64
+from streamlit_option_menu import option_menu
+import fitz  
+import PyMuPDF
+
 
 def save_pdf_from_url(url, file_path):
     response = requests.get(url)
